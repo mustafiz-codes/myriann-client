@@ -333,7 +333,8 @@ body {
   padding-bottom: 252px; }
   @media only screen and (max-width: 767px) {
     .home-header {
-      padding-bottom: 100px; } }
+      padding: 25px 20px 100px;
+      text-align: left; } }
 
 header {
   padding-top: 50px; }
@@ -355,6 +356,9 @@ header {
         padding-top: 80px; } }
   header .heading-1 {
     margin-bottom: 100px; }
+    @media only screen and (max-width: 767px) {
+      header .heading-1 {
+        text-align: left; } }
   header .button-with-bg,
   header .button-with-border {
     margin: 0px 15px; }
@@ -486,6 +490,9 @@ header {
   text-align: center; }
   .trusted-by .heading-4 {
     margin-bottom: 63px; }
+    @media only screen and (max-width: 767px) {
+      .trusted-by .heading-4 {
+        text-align: left; } }
   .trusted-by .heading-5 {
     margin-bottom: 100px;
     color: #F15A29; }
@@ -506,7 +513,7 @@ header {
         width: 100%; } }
   @media only screen and (max-width: 767px) {
     .trusted-by {
-      padding: 80px 0px; } }
+      padding: 80px 20px; } }
 
 /* Why Myriann */
 .why-mairian {
@@ -533,7 +540,7 @@ header {
     width: 80%; }
   @media only screen and (max-width: 767px) {
     .why-mairian {
-      text-align: center;
+      text-align: left;
       padding: 80px 0px 100px; } }
 
 /* Case Studies */
@@ -545,6 +552,9 @@ header {
   background-size: cover; }
   .case-studies .heading-3 {
     margin-bottom: 100px; }
+    @media only screen and (max-width: 767px) {
+      .case-studies .heading-3 {
+        text-align: left; } }
   .case-studies .p-text {
     margin-bottom: 40px; }
     @media only screen and (min-width: 1200px) {
@@ -561,7 +571,8 @@ header {
         padding-right: 30px; } }
     @media only screen and (max-width: 767px) {
       .case-studies .case-studies-content {
-        padding-right: 15px; } }
+        padding-right: 15px;
+        text-align: left; } }
   .case-studies img {
     width: 100%; }
   .case-studies .mb-100 {
@@ -575,7 +586,7 @@ header {
   @media only screen and (max-width: 767px) {
     .case-studies {
       text-align: center;
-      padding: 80px 0px 80px; } }
+      padding: 80px 20px 80px; } }
 
 /* Work With Us */
 .work-with-us {
@@ -593,7 +604,7 @@ header {
         line-height: 30px; } }
   @media only screen and (max-width: 767px) {
     .work-with-us {
-      padding: 80px 0px; } }
+      padding: 80px 20px; } }
 
 /* footer */
 footer {
@@ -1240,6 +1251,8 @@ footer {
   background-position: bottom left; }
   .c-content .case-studies-content .link-text {
     margin-bottom: 20px; }
+  .c-content .mobile-mb-40 {
+    margin-bottom: 30px; }
   @media only screen and (min-width: 1650px) {
     .c-content {
       background-image: url(../images/c-bg1.png); } }
