@@ -1,0 +1,206 @@
+/**
+ * ----------------------------------------------
+ * service-header
+ * 
+ */
+
+.fiz-background {
+  position: absolute;
+  img {
+    width: 100vw;
+    height: 780px;
+  }
+}
+// mustafiz css
+
+//   tab
+@include media-max(996px) {
+  .fiz-background {
+    img {
+      width: 100vw;
+      height: 890px;
+    }
+  }
+}
+@include media-max(767px) {
+  .fiz-background {
+    img {
+      width: 100vw;
+      height: 560px;
+    }
+  }
+}
+
+//   mobile
+@include media-max(575px) {
+  .fiz-background {
+    img {
+      width: 100vw;
+      height: 560px;
+    }
+  }
+}
+
+@include media-max(420px) {
+  .fiz-background {
+    img {
+      width: 100vw;
+      height: 600px;
+    }
+  }
+}
+
+@include media-max(375px) {
+  .fiz-background {
+    img {
+      width: 100vw;
+      height: 700px;
+    }
+  }
+}
+
+.contact-header {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(236, 250, 255, 0) 50%,
+    rgba(236, 250, 255, 0.47) 100%
+  );
+  .contact-content {
+    padding: 120px 35px 133px;
+
+    .c-text {
+      .heading-3 {
+        margin-bottom: 40px;
+      }
+      h4 {
+        @include font($lato, 400, 35px);
+        color: $title-text-color;
+        padding-bottom: 100px;
+        line-height: 36px;
+        font-size: 24px;
+        @include media-min(991px) {
+          padding: 20px 210px 100px;
+        }
+        @include media-max(767px) {
+          font-size: 25px;
+          padding-bottom: 60px;
+          line-height: 40px;
+        }
+        // @include media-max(420px) {
+        //   font-size: 16px;
+        //   padding-bottom: 60px;
+        //   line-height: 25px;
+        // }
+      }
+      @include media-min(768px) {
+        padding: 0px 20px 70px 20px;
+      }
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 21px 0px 21px 27px;
+      margin-bottom: 20px;
+      border: 1px solid $color13;
+      outline: none;
+      @include font($lato, 700, 16px);
+      color: $title-text-color;
+      &::placeholder {
+        @include font($lato, 400, 16px);
+        color: $color12;
+      }
+      &::-webkit-input-placeholder {
+        @include font($lato, 400, 16px);
+        color: $color12;
+      }
+      &::-moz-placeholder {
+        @include font($lato, 400, 16px);
+        color: $color12;
+      }
+      &:-ms-input-placeholder {
+        @include font($lato, 400, 16px);
+        color: $color12;
+      }
+      &:-moz-placeholder {
+        @include font($lato, 400, 16px);
+        color: $color12;
+      }
+      &:focus,
+      &:active {
+        border: 2px solid $theme-color;
+      }
+    }
+    .submit-btn {
+      @include font($lato, 700, 14px);
+      background-color: $theme-color;
+      border-color: $theme-color;
+      color: $white;
+      &:hover {
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+    @include media-max(991px) {
+      padding: 120px 35px 100px;
+    }
+    @include media-max(767px) {
+      padding: 80px 0px 0px;
+    }
+  }
+
+  @include media-max(767px) {
+    padding-bottom: 40px;
+  }
+}
+/**
+ * ----------------------------------------------
+ * join-team
+ * 
+ */
+.join-team {
+  padding: 150px 0px;
+  .heading-3 {
+    margin-bottom: 40px;
+    @include media-max(767px) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    @include media-max(380px) {
+      font-size: 22px;
+    }
+  }
+  h5 {
+    @include font($lato, 400, 25px);
+    color: $title-text-color;
+    line-height: 35px;
+    a {
+      color: $link-text;
+      @include font($lato, 700, 25px);
+      @include media-max(767px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include media-max(380px) {
+        font-size: 15px;
+        line-height: 25px;
+      }
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $theme-color;
+      }
+    }
+    @include media-max(767px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include media-max(380px) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  @include media-max(767px) {
+    padding: 80px 0px;
+  }
+}

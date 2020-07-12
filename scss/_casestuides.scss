@@ -1,0 +1,32 @@
+/**
+ * ----------------------------------------------
+ * case studies content
+ * 
+ */
+ .case-studies-header { 
+    .heading-3 {
+        margin-bottom: 32px;
+    }
+    .heading-4 {
+        @include media-max(767px) {
+           margin-bottom: 80px;
+        }
+    }
+ }
+ .c-content {
+    padding-bottom: 50px;
+    background-image: url(../images/c-bg.png);
+    background-color: transparent;
+    background-position: bottom left;
+    .case-studies-content {
+        .link-text {
+            margin-bottom: 20px;
+        }
+    }
+    @include media-min(1650px) {
+        background-image: url(../images/c-bg1.png);
+    }
+    @include media-max(767px) {
+        padding: 0px;
+    }
+}

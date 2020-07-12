@@ -1,0 +1,123 @@
+/**
+ * ----------------------------------------------
+ * SIMPLE RESET
+ * ----------------------------------------------
+ */
+*{
+    @include font($playfair,900,16px);
+    @include box-sizing(border-box);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $white;
+    @include scrollbars(.5em,  lighten($theme-color,20%));
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/**
+ * ----------------------------------------------
+ * CUSTOM CLASS
+ * ----------------------------------------------
+ */
+.page-wrapper{
+    position: relative;
+}
+.fix-container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    @include media-max(500px){
+        padding: 0 3%;
+    }
+    @include media-min-max(500px,800px){
+        padding: 0 3%;
+    }
+}
+.white-space{
+    height: 130px;
+    width: 100%;
+    @include media-min(1370px){
+        height: 160px;
+    }
+    @include media-max(500px){
+        height: 80px;
+    }
+    @include media-max(400px) {
+        height: 50px;
+    }
+}
+.w30 {
+    width: 260px;
+    margin-top: 40px;
+}
+.fix{
+    margin: 0px;
+    padding: 0px;
+}
+.p-none{
+    padding: 0px;
+}
+.p-left-r {
+    @include media-min(992px) {
+        padding: 0px 30px;
+    }
+}
+.m-none{
+    margin: 0px;
+}
+.clear{
+    clear: both;
+}
+.stop-scroll {
+    @include media-min(768px) {
+        overflow: hidden; 
+    }
+}
+.eq-height {
+    @include media-min(768px) {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+}
+.light-bg {
+    background-color: $background-color1;
+}
+.p-r-45 {
+    @include media-min-max(1300px,1480px) {  
+        padding-right: 45px !important;
+    }
+}
+.p-r-60 {
+    @include media-min-max(1300px,1480px) {  
+        padding-right: 60px !important;
+    }
+}
+.p-t-80 {
+    @include media-min(768px) {
+        padding-top: 100px;
+    }
+}
+.p-l-30 {
+    @include media-min(768px) {
+        padding-left : 30px;
+    }
+}
+.p-l-45 {
+    @include media-min(768px) {
+        padding-left : 45px;
+    }
+}
+.p-l-20 {
+    @include media-min(768px) {
+        padding-left : 20px;
+    }
+}
+.p-r-30 {
+    @include media-min(768px) {
+        padding-right : 30px;
+    }
+}

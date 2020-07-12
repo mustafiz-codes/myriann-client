@@ -1,0 +1,43 @@
+/**
+ * ----------------------------------------------
+ * clients
+ * 
+ */
+.clients-sc {
+  .heading-3 {
+    margin-bottom: 32px;
+  }
+  .heading-4 {
+    margin-bottom: 150px;
+    @include media-max(767px) {
+      margin-bottom: 80px;
+    }
+  }
+  img {
+    margin-bottom: 100px;
+    padding: 0px 20px;
+    @include media-min-max(768px, 1024px) {
+      width: 100% !important;
+    }
+    @include media-max(767px) {
+      margin-bottom: 60px;
+      padding: 0px;
+    }
+  }
+  .clients-shamin {
+    width: 150px;
+  }
+  .client-name {
+    text-align: left;
+    .p-text {
+      margin-bottom: 30px;
+      color: $title-text-color;
+    }
+    @include media-max(767px) {
+      text-align: center;
+    }
+  }
+  @include media-max(767px) {
+    padding-bottom: 0px;
+  }
+}
