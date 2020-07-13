@@ -279,6 +279,11 @@ header {
       margin-bottom: 80px;
     }
   }
+  .mobile-mb-40 {
+    @include media-max(767px) {
+      margin-bottom: 30px;
+    }
+  }
   .button-with-border {
     @include media-max(767px) {
       margin: auto;

@@ -3,123 +3,135 @@
  * hospitality
  * 
  */
- .hospitality-02 {
-    padding: 118px 0px;
-    .heading-3 {
-         margin-bottom: 40px;
-     }
-    .p-text {
-        margin-bottom: 40px;
+.hospitality-header {
+  padding: 25px 20px 0px;
+}
+
+.hospitality-02 {
+  padding: 118px 0px;
+  .heading-3 {
+    margin-bottom: 40px;
+  }
+  .p-text {
+    margin-bottom: 40px;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 70px;
+    @include media-max(767px) {
+      padding: 0px 10%;
+    }
+  }
+  @include media-max(991px) {
+    text-align: center;
+  }
+  a {
+    @include media-max(991px) {
+      margin: auto;
+    }
+  }
+  @include media-max(767px) {
+    padding: 80px 0px;
+  }
+}
+.index {
+  background-color: $background-color2;
+  .img-02 {
+    @include media-max(991px) {
+      order: 1;
     }
     img {
-        width: 100%;
-        margin-bottom: 70px;
-        @include media-max(767px) {
-            padding: 0px 10%;
+      @include media-min(992px) {
+        padding-left: 70px;
+      }
+    }
+  }
+  .text-02 {
+    @include media-max(991px) {
+      order: 2;
+    }
+  }
+}
+.long-live {
+  background-color: $background-color4;
+  .img-02 {
+    img {
+      @include media-min(992px) {
+        padding-right: 70px;
+      }
+    }
+  }
+  .heading-3 {
+    color: $white;
+  }
+  .p-text {
+    color: $white;
+  }
+  .button-with-border {
+    border-color: $white;
+    color: $white;
+    &:hover {
+      border-color: $theme-color;
+    }
+  }
+  .social-icon {
+    margin-bottom: 40px;
+    margin-top: 50px;
+    li {
+      display: inline-block;
+      margin-right: 26px;
+      width: 54px;
+      height: 54px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      vertical-align: middle;
+      a {
+        .fb {
+          fill: $white;
+          stroke: none;
         }
+        svg {
+          path {
+            stroke: $white;
+          }
+        }
+      }
+      &:hover svg path,
+      &:hover {
+        stroke: $theme-color;
+      }
+      &:hover .fb path,
+      &:hover {
+        fill: $theme-color;
+      }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $theme-color;
+      }
+      @include media-min-max(768px, 1024px) {
+        margin-right: 16px;
+        width: 45px;
+        height: 45px;
+      }
+      @include media-max(991px) {
+        margin: 0px 8px;
+      }
+      @include media-max(767px) {
+        margin: 0px 12px;
+      }
     }
     @include media-max(991px) {
-        text-align: center;
+      justify-content: center;
     }
-    a {
-        @include media-max(991px) {
-            margin: auto;
-        }  
-    }
-    @include media-max(767px) {
-        padding: 80px 0px;
-    }
- }
- .index {
-    background-color: $background-color2;
-    .img-02 {
-        @include media-max(991px) {
-            order: 1;
-        }
-        img {
-            @include media-min(992px) {
-                padding-left: 70px;
-            }
-        }
-    }
-    .text-02 {
-        @include media-max(991px) {
-            order: 2;
-        }
-    }
- }
- .long-live {
-    background-color: $background-color4;
-    .img-02 {
-        img {
-            @include media-min(992px) {
-                padding-right: 70px;
-            }
-        }
-    }
-    .heading-3 {
-        color: $white;
-    }
-    .p-text {
-        color: $white;
-    }
-    .button-with-border {
-        border-color: $white;
-        color: $white;
-        &:hover {
-            border-color: $theme-color;
-        }
-    }
-    .social-icon {
-        margin-bottom: 40px;
-        margin-top: 50px;
-        li {
-            display: inline-block;
-            margin-right: 26px;
-            width: 54px;
-            height: 54px;
-            border: 1px solid $white;
-            border-radius: 50%;
-            vertical-align: middle;
-            a {
-                .fb {
-                    fill: $white;
-                    stroke: none;
-                }
-                svg {
-                    
-                    path {
-                        stroke: $white;
-                    }
-                }
-            }
-            &:hover svg path, &:hover {
-                stroke: $theme-color;
-            }
-            &:hover .fb path, &:hover {
-                fill: $theme-color;
-            }
-            &:hover {
-                background-color: transparent;
-                border: 1px solid $theme-color;
-            }
-            @include media-min-max(768px,1024px){
-                margin-right: 16px;
-                width: 45px;
-                height: 45px;
-            }
-            @include media-max(991px) {
-                margin: 0px 8px;
-             } 
-            @include media-max(767px) {
-                margin: 0px 12px;
-            }
-        }
-        @include media-max(991px) {
-            justify-content: center;
-        }
-    }
- }
- .service {
-    background: linear-gradient(180deg, rgba(236, 250, 255, 0) 50%, rgba(236, 250, 255, 0.47) 100%);
- }
+  }
+}
+.service {
+  background: linear-gradient(
+    180deg,
+    rgba(236, 250, 255, 0) 50%,
+    rgba(236, 250, 255, 0.47) 100%
+  );
+  @include media-max(767px) {
+    padding: 0px 20px;
+  }
+}

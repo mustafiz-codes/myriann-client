@@ -11,6 +11,7 @@
 }
 .ap-bg {
   background-image: url(../images/access-bg.jpg);
+  padding: 0px 20px;
 }
 .cap-bg {
   background-image: url(../images/caplogic.jpg);
@@ -77,8 +78,13 @@
       margin-top: 80px;
     }
   }
+  .in-12 {
+    @include media-max(767px) {
+      margin: 0 !important;
+    }
+  }
   @include media-max(767px) {
-    text-align: center;
+    text-align: left;
   }
 }
 .service-p {
@@ -92,6 +98,7 @@
     margin-bottom: 100px;
     @include media-max(767px) {
       margin-bottom: 60px;
+      text-align: left !important;
     }
     @include media-min-max(768px, 991px) {
       font-size: 40px;
@@ -111,7 +118,7 @@
       }
     }
     @include media-max(767px) {
-      text-align: center;
+      text-align: left;
       list-style: none;
     }
     @include media-min(991px) {
@@ -120,9 +127,10 @@
   }
   @include media-max(767px) {
     padding: 80px 0px;
-    text-align: center;
+    text-align: left;
   }
 }
+
 .by-t-num {
   .single-count {
     span {
@@ -364,6 +372,7 @@
   }
   @include media-max(767px) {
     padding-bottom: 60px;
+    text-align: left;
   }
 }
 .online-app {

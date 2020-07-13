@@ -6,11 +6,20 @@
 .case-studies-header {
   .heading-3 {
     margin-bottom: 32px;
+    @include media-max(767px) {
+      text-align: left;
+    }
   }
   .heading-4 {
     @include media-max(767px) {
       margin-bottom: 80px;
+      text-align: left;
     }
+  }
+
+  @include media-max(767px) {
+    padding: 25px 20px;
+    text-align: left;
   }
 }
 .c-content {
@@ -32,6 +41,21 @@
     background-image: url(../images/c-bg1.png);
   }
   @include media-max(767px) {
-    padding: 0px;
+    padding: 25px 25px;
+  }
+}
+
+.work-with-us {
+  h3,
+  h4 {
+    @include media-max(767px) {
+      text-align: left;
+    }
+  }
+
+  .m-auto {
+    @include media-max(767px) {
+      margin: 0 !important;
+    }
   }
 }

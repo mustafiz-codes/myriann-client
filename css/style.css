@@ -581,6 +581,9 @@ header {
       .case-studies .mb-100 {
         margin-bottom: 80px; } }
   @media only screen and (max-width: 767px) {
+    .case-studies .mobile-mb-40 {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
     .case-studies .button-with-border {
       margin: auto; } }
   @media only screen and (max-width: 767px) {
@@ -720,10 +723,11 @@ footer {
           font-size: 22px; } }
     @media only screen and (max-width: 767px) {
       .about-header .about-h-conent {
-        padding-top: 60px; } }
+        padding-top: 60px;
+        text-align: left; } }
   @media only screen and (max-width: 767px) {
     .about-header {
-      padding-bottom: 60px; } }
+      padding: 0px 20px 60px; } }
 
 /**
  * ----------------------------------------------
@@ -750,11 +754,10 @@ footer {
         padding-right: 80px; } }
     @media only screen and (max-width: 767px) {
       .commandments .c-sec .c-sec-left {
-        text-align: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 50px 0px; } }
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+        padding: 50px 20px; } }
   .commandments .c-sec .c-sec-right {
     -webkit-box-flex: 3;
     -ms-flex: 3;
@@ -774,7 +777,8 @@ footer {
         padding: 60px 30px 23px 0px; } }
     @media only screen and (max-width: 767px) {
       .commandments .c-sec .c-sec-right {
-        padding-top: 60px; } }
+        padding-top: 60px;
+        padding-left: 40px; } }
   .commandments .c-sec img {
     width: 100%; }
   .commandments .c-sec .execution-single img {
@@ -837,13 +841,14 @@ footer {
       .commandments .c-sec .heading-4 {
         margin-left: 15px;
         margin-right: 15px;
-        text-align: center;
+        text-align: left;
         font-size: 25px; } }
   @media only screen and (min-width: 768px) {
     .commandments .c-sec {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      text-align: left; } }
 
 .commandments .execution .c-sec-left {
   background-color: #E35629; }
@@ -898,7 +903,8 @@ footer {
     margin-bottom: 100px; }
     @media only screen and (max-width: 767px) {
       .our-team .heading-3 {
-        margin-bottom: 60px; } }
+        margin-bottom: 60px;
+        text-align: left !important; } }
   .our-team .heading-4 {
     font-weight: bold;
     font-size: 34px;
@@ -914,14 +920,15 @@ footer {
         margin-bottom: 60px; } }
     @media only screen and (max-width: 767px) {
       .our-team .p-text {
-        margin-bottom: 40px; } }
+        margin-bottom: 40px;
+        text-align: left; } }
   @media only screen and (max-width: 991px) {
     .our-team {
       padding: 100px 0px 40px; } }
   @media only screen and (max-width: 767px) {
     .our-team {
-      text-align: center;
-      padding: 60px 0px 20px; } }
+      text-align: left;
+      padding: 60px 20px 20px; } }
 
 /**
  * ----------------------------------------------
@@ -935,7 +942,9 @@ footer {
   background: linear-gradient(180deg, rgba(236, 250, 255, 0) 50%, rgba(236, 250, 255, 0.47) 100%); }
   @media only screen and (max-width: 767px) {
     .service-header {
-      padding-bottom: 20px; } }
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .service-content {
   margin-top: 89px; }
@@ -943,7 +952,8 @@ footer {
     margin-bottom: 105px; }
     @media only screen and (max-width: 767px) {
       .service-content .heading-3 {
-        margin-bottom: 60px; } }
+        margin-bottom: 60px;
+        text-align: left !important; } }
   .service-content h5 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
@@ -962,7 +972,8 @@ footer {
     .service-content {
       text-align: center;
       margin-top: 80px;
-      padding-bottom: 20px; } }
+      padding-bottom: 20px;
+      text-align: left; } }
 
 /**
  * ----------------------------------------------
@@ -999,7 +1010,7 @@ footer {
 
 @media only screen and (max-width: 767px) {
   .our-works-header {
-    padding-bottom: 0px; } }
+    padding: 0px 20px; } }
 
 .overlay {
   position: absolute;
@@ -1008,9 +1019,9 @@ footer {
   left: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
   background-color: #D5EEF6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1177,10 +1188,11 @@ footer {
         padding: 120px 35px 100px; } }
     @media only screen and (max-width: 767px) {
       .contact-header .contact-content {
-        padding: 80px 0px 0px; } }
+        padding: 80px 0px 0px;
+        text-align: left !important; } }
   @media only screen and (max-width: 767px) {
     .contact-header {
-      padding-bottom: 40px; } }
+      padding: 0px 20px 40px; } }
 
 /**
  * ----------------------------------------------
@@ -1239,10 +1251,19 @@ footer {
  */
 .case-studies-header .heading-3 {
   margin-bottom: 32px; }
+  @media only screen and (max-width: 767px) {
+    .case-studies-header .heading-3 {
+      text-align: left; } }
 
 @media only screen and (max-width: 767px) {
   .case-studies-header .heading-4 {
-    margin-bottom: 80px; } }
+    margin-bottom: 80px;
+    text-align: left; } }
+
+@media only screen and (max-width: 767px) {
+  .case-studies-header {
+    padding: 25px 20px;
+    text-align: left; } }
 
 .c-content {
   padding-bottom: 50px;
@@ -1258,13 +1279,25 @@ footer {
       background-image: url(../images/c-bg1.png); } }
   @media only screen and (max-width: 767px) {
     .c-content {
-      padding: 0px; } }
+      padding: 25px 25px; } }
+
+@media only screen and (max-width: 767px) {
+  .work-with-us h3,
+  .work-with-us h4 {
+    text-align: left; } }
+
+@media only screen and (max-width: 767px) {
+  .work-with-us .m-auto {
+    margin: 0 !important; } }
 
 /**
  * ----------------------------------------------
  * hospitality
  * 
  */
+.hospitality-header {
+  padding: 25px 20px 0px; }
+
 .hospitality-02 {
   padding: 118px 0px; }
   .hospitality-02 .heading-3 {
@@ -1362,6 +1395,9 @@ footer {
   background: -webkit-linear-gradient(top, rgba(236, 250, 255, 0) 50%, rgba(236, 250, 255, 0.47) 100%);
   background: -o-linear-gradient(top, rgba(236, 250, 255, 0) 50%, rgba(236, 250, 255, 0.47) 100%);
   background: linear-gradient(180deg, rgba(236, 250, 255, 0) 50%, rgba(236, 250, 255, 0.47) 100%); }
+  @media only screen and (max-width: 767px) {
+    .service {
+      padding: 0px 20px; } }
 
 /**
  * ----------------------------------------------
@@ -1416,7 +1452,8 @@ footer {
   background-size: cover; }
 
 .ap-bg {
-  background-image: url(../images/access-bg.jpg); }
+  background-image: url(../images/access-bg.jpg);
+  padding: 0px 20px; }
 
 .cap-bg {
   background-image: url(../images/caplogic.jpg); }
@@ -1480,8 +1517,12 @@ footer {
       margin-top: 80px; } }
 
 @media only screen and (max-width: 767px) {
+  .c-inner-header .in-12 {
+    margin: 0 !important; } }
+
+@media only screen and (max-width: 767px) {
   .c-inner-header {
-    text-align: center; } }
+    text-align: left; } }
 
 .service-p {
   padding: 150px 0px; }
@@ -1492,7 +1533,8 @@ footer {
     margin-bottom: 100px; }
     @media only screen and (max-width: 767px) {
       .service-p .heading-3 {
-        margin-bottom: 60px; } }
+        margin-bottom: 60px;
+        text-align: left !important; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .service-p .heading-3 {
         font-size: 40px;
@@ -1511,7 +1553,7 @@ footer {
         line-height: 30px; } }
   @media only screen and (max-width: 767px) {
     .service-p ul {
-      text-align: center;
+      text-align: left;
       list-style: none; } }
   @media only screen and (min-width: 991px) {
     .service-p ul {
@@ -1519,7 +1561,7 @@ footer {
   @media only screen and (max-width: 767px) {
     .service-p {
       padding: 80px 0px;
-      text-align: center; } }
+      text-align: left; } }
 
 .by-t-num .single-count span {
   font-size: 60px; }
@@ -1734,7 +1776,8 @@ footer {
     margin-bottom: 100px; }
   @media only screen and (max-width: 767px) {
     .ad-design {
-      padding-bottom: 60px; } }
+      padding-bottom: 60px;
+      text-align: left; } }
 
 .online-app .heading-5 {
   text-align: center;

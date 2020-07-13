@@ -3,67 +3,67 @@
  * our works
  * 
  */
- .our-works-header {
-     .our-works-content {
-         margin-bottom: 100px;
-         .heading-3 {
-             margin: 121px 0px 32px;
-             @include media-max(767px) { 
-                margin: 80px 0px 32px;
-            }
-         }
-         .heading-4 {
-             margin-bottom: 132px;
-             @include media-max(767px) { 
-                margin-bottom: 60px;
-            }
-         }
-         .w-01 {
-             margin: 52px 50px;
-            img {
-                width: 100%;
-                box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
-            }
-            @include media-max(991px) { 
-                margin: 32px 30px;
-            }
-            @include media-max(580px) { 
-                margin: 32px 50px;
-            }
-         }
-         @include media-max(767px) { 
-            margin-bottom: 48px;
-        }
+.our-works-header {
+  .our-works-content {
+    margin-bottom: 100px;
+    .heading-3 {
+      margin: 121px 0px 32px;
+      @include media-max(767px) {
+        margin: 80px 0px 32px;
+      }
     }
-    @include media-max(767px) { 
-        padding-bottom: 0px;
+    .heading-4 {
+      margin-bottom: 132px;
+      @include media-max(767px) {
+        margin-bottom: 60px;
+      }
     }
- }
- .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: $background-color2;    
-    display: flex;
-    align-items: center;
-    padding: 0px 30px;
-    margin: 52px 65px;
-    .p-text {
-      color: $black;
-      font-size: 19px;
-      text-align: center;
-    }
-    @include media-max(991px) { 
-        margin: 32px 46px;
-    }
-    @include media-max(580px) { 
+    .w-01 {
+      margin: 52px 50px;
+      img {
+        width: 100%;
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+      }
+      @include media-max(991px) {
         margin: 32px 30px;
+      }
+      @include media-max(580px) {
+        margin: 32px 50px;
+      }
+    }
+    @include media-max(767px) {
+      margin-bottom: 48px;
     }
   }
-  .w-01:hover .overlay {
-    opacity: 1;
+  @include media-max(767px) {
+    padding: 0px 20px;
   }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: $background-color2;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  margin: 52px 65px;
+  .p-text {
+    color: $black;
+    font-size: 19px;
+    text-align: center;
+  }
+  @include media-max(991px) {
+    margin: 32px 46px;
+  }
+  @include media-max(580px) {
+    margin: 32px 30px;
+  }
+}
+.w-01:hover .overlay {
+  opacity: 1;
+}
