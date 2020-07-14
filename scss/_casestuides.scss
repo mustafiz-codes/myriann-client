@@ -50,12 +50,14 @@
   h4 {
     @include media-max(767px) {
       text-align: left;
+      margin-left: -15px !important;
     }
   }
 
   .m-auto {
     @include media-max(767px) {
       margin: 0 !important;
+      margin-left: -15px !important;
     }
   }
 }
