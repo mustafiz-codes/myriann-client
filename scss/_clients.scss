@@ -3,6 +3,14 @@
  * clients
  * 
  */
+
+.clients-header {
+  @include media-max(767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .clients-sc {
   .heading-3 {
     margin-bottom: 32px;
@@ -34,7 +42,7 @@
       color: $title-text-color;
     }
     @include media-max(767px) {
-      text-align: center;
+      text-align: left;
     }
   }
   @include media-max(767px) {

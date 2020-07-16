@@ -183,6 +183,7 @@ header {
     color: $theme-color;
     @include media-max(767px) {
       margin-bottom: 60px;
+      text-align: left;
     }
   }
   img {
