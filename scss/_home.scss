@@ -327,6 +327,9 @@ footer {
     margin-bottom: 70px;
     font-weight: bold;
     color: $black;
+    @include media-max(767px) {
+      margin-bottom: 20px;
+    }
   }
   .footer-logo {
     width: 130px;
@@ -336,6 +339,9 @@ footer {
     color: $title-text-color;
     line-height: 60px;
     padding-left: 10px;
+    @include media-max(767px) {
+      padding: 0px 0px 40px;
+    }
   }
   .link-text {
     margin-bottom: 10px;

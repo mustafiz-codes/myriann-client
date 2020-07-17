@@ -60,7 +60,6 @@
       }
       @include media-max(767px) {
         margin-top: 30px;
-        padding-top: 50px;
       }
     }
     .case-studies-logo {
@@ -72,7 +71,7 @@
     .in-12 {
       margin: 30px 0px 0px;
       @include media-max(767px) {
-        margin: 30px auto 40px;
+        margin: 50px 0px 30px !important;
       }
     }
     @include media-max(767px) {
@@ -100,7 +99,7 @@
   .heading-3 {
     margin-bottom: 100px;
     @include media-max(767px) {
-      margin-bottom: 60px;
+      margin-bottom: 40px;
       text-align: left !important;
     }
     @include media-min-max(768px, 991px) {
@@ -131,6 +130,16 @@
   @include media-max(767px) {
     padding: 80px 20px;
     text-align: left;
+  }
+}
+
+.inner-tab {
+  #nav-tabContent {
+    h5 {
+      @include media-max(767px) {
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -243,7 +252,7 @@
       }
     }
     @include media-max(767px) {
-      text-align: center;
+      text-align: left;
     }
   }
   .algo-3 {
@@ -277,8 +286,19 @@
       text-align: left;
     }
   }
+
+  .app-dwld {
+    img {
+      @include media-max(767px) {
+        padding-left: 0px;
+      }
+    }
+    @include media-max(767px) {
+      text-align: left !important;
+    }
+  }
+
   @include media-max(767px) {
-    text-align: center;
     padding: 80px 20px 0px;
   }
 }
@@ -331,8 +351,7 @@
     }
   }
   @include media-max(767px) {
-    padding: 80px 0px 0px;
-    text-align: left;
+    padding: 0px 20px 80px;
   }
 }
 .p-b-100 {
@@ -363,8 +382,9 @@
       padding-right: 20px;
     }
   }
+
   @include media-max(767px) {
-    margin-bottom: 60px;
+    margin: 0px 20px 60px;
   }
 }
 #tabs .nav-tabs .nav-item.show .nav-link,
@@ -386,7 +406,6 @@
   }
   @include media-max(767px) {
     padding-bottom: 60px;
-    text-align: left;
   }
 }
 .online-app {
@@ -430,7 +449,7 @@
   }
   @include media-max(767px) {
     padding: 0px 0px 80px;
-    text-align: center;
+    // text-align: center;
   }
 }
 .branding {
